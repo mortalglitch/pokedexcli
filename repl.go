@@ -58,5 +58,15 @@ func getCommands() map[string]cliCommand {
 			description: "Exit the Pokedex",
 			callback:    commandExit,
 		},
+		"map": {
+			name:        "map",
+			description: "Pulls the map areas",
+			callback:    getCurrentMap,
+		},
+		"mapb": {
+			name:        "mapb",
+			description: "Pulls the previous map areas",
+			callback:    getPreviousMap,
+		},
 	}
 }
